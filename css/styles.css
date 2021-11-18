@@ -1,0 +1,46 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+body {
+    background: url("https://i.ytimg.com/vi/MwryCPKjmR0/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    width: 92%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bola {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background: radial-gradient(circle, rgba(255,203,0,.8) 0%, rgba(255,151,0,.8) 19%, rgba(255,0,0,.8) 100%);
+    border-radius: 50%;
+    animation-name: bola;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes bola {
+
+    0% {
+        bottom: 15px;
+        outline: 0px solid #f00;
+    }
+
+    100% {
+        bottom: 130px;
+        outline: 10px solid #f00;
+    }
+
+}
